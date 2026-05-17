@@ -15,9 +15,9 @@ preplace portBus adc_data_ch1 -pg 1 -y 1560 -defaultsOSRD
 preplace portBus mux_sel_ch0 -pg 1 -y 190 -defaultsOSRD
 preplace portBus mux_sel_ch1 -pg 1 -y 170 -defaultsOSRD
 preplace inst dmca_0 -pg 1 -lvl 2 -y 1040 -defaultsOSRD
+preplace inst axi_lite_ctrl_0 -pg 1 -lvl 3 -y 1450 -defaultsOSRD
 preplace inst dmca_1 -pg 1 -lvl 2 -y 320 -defaultsOSRD
 preplace inst adc_sample_0 -pg 1 -lvl 4 -y 1450 -defaultsOSRD
-preplace inst axi_lite_ctrl_0 -pg 1 -lvl 3 -y 1450 -defaultsOSRD
 preplace inst rst_ps7_0_250M -pg 1 -lvl 2 -y 600 -defaultsOSRD
 preplace inst daq_axi_lite_0 -pg 1 -lvl 3 -y 1090 -defaultsOSRD
 preplace inst adc_sample_1 -pg 1 -lvl 4 -y 1290 -defaultsOSRD
@@ -33,59 +33,59 @@ preplace inst system_ila_1 -pg 1 -lvl 6 -y 330 -defaultsOSRD
 preplace inst wave_bram_ctrl_0 -pg 1 -lvl 4 -y 1670 -defaultsOSRD
 preplace inst axi_bram_ctrl_0 -pg 1 -lvl 3 -y 1700 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 1 -y 160 -defaultsOSRD
-preplace netloc processing_system7_0_DDR 1 1 6 NJ 100 NJ 100 NJ 100 NJ 100 NJ 100 N
-preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 970
-preplace netloc axi_lite_ctrl_0_na 1 2 1 960
-preplace netloc axi_lite_ctrl_0_peak_threshold_count 1 2 1 980
-preplace netloc mux_match_0_match_valid 1 2 4 1110 70 NJ 70 NJ 70 2580
-preplace netloc processing_system7_0_FCLK_CLK3 1 1 5 430 140 NJ 140 1570 310 2200 250 NJ
-preplace netloc axi_lite_ctrl_0_nb 1 2 1 930
-preplace netloc wave_bram_ctrl_0_intr_clr_ack 1 2 3 1140 1880 NJ 1880 2180
-preplace netloc axi_lite_ctrl_0_daq_en 1 1 4 460 1530 1080 1800 1560 1140 2140
-preplace netloc mux_match_0_mux_sel_ch0_out 1 2 4 1140 110 NJ 110 2200J 230 2590
-preplace netloc mux_controller_1_mux_sel 1 4 3 2160 210 2640 170 NJ
-preplace netloc wave_bram_ctrl_0_intr 1 3 2 NJ 1070 2110
-preplace netloc axi_lite_ctrl_0_wave_intr_clr 1 3 2 1630 1130 2130
-preplace netloc axi_lite_ctrl_0_adc_en 1 3 1 1600
-preplace netloc cmp_in_0_1 1 0 4 NJ 20 NJ 20 NJ 20 1580J
-preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 3 2 1620 1560 N
+preplace netloc processing_system7_0_DDR 1 1 6 400J 90 NJ 90 NJ 90 NJ 90 NJ 90 2910
+preplace netloc ps7_0_axi_periph_M02_AXI 1 2 1 1030
+preplace netloc axi_lite_ctrl_0_na 1 1 3 530 500 N 500 1550
+preplace netloc axi_lite_ctrl_0_peak_threshold_count 1 1 3 500 120 1040 130 1580
+preplace netloc mux_match_0_match_valid 1 2 4 1120 170 1640J 120 NJ 120 2650
+preplace netloc processing_system7_0_FCLK_CLK3 1 1 5 430 150 980J 160 1670 310 2280 250 NJ
+preplace netloc axi_lite_ctrl_0_nb 1 1 3 540 490 N 490 1570
+preplace netloc wave_bram_ctrl_0_intr_clr_ack 1 2 3 1150 1880 NJ 1880 2260
+preplace netloc axi_lite_ctrl_0_daq_en 1 1 4 490 1540 1110 1800 1670 1140 2220
+preplace netloc mux_match_0_mux_sel_ch0_out 1 2 4 1100 50 NJ 50 2280J 230 2660
+preplace netloc mux_controller_1_mux_sel 1 4 3 2240 210 2710 170 NJ
+preplace netloc wave_bram_ctrl_0_intr 1 3 2 NJ 1070 2190
+preplace netloc axi_lite_ctrl_0_wave_intr_clr 1 3 2 1740 1130 2210
+preplace netloc axi_lite_ctrl_0_adc_en 1 3 1 1660
+preplace netloc cmp_in_0_1 1 0 4 -30J 30 NJ 30 NJ 30 1680J
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 3 2 1730 1560 N
 preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 410
-preplace netloc daq_axi_lite_0_match_ready 1 3 3 1560J 1060 2070 280 2600J
-preplace netloc cmp_in_0_2 1 0 4 NJ 0 NJ 0 NJ 0 1700J
-preplace netloc axi_lite_ctrl_0_a_over_na_mul_a_minus_b 1 2 1 1050
-preplace netloc daq_axi_lite_0_intr 1 4 1 2200
-preplace netloc dmca_0_peak_value_ok 1 2 3 1070 1830 1610J 1190 2090
+preplace netloc daq_axi_lite_0_match_ready 1 3 3 1670J 1060 2150 280 2670J
+preplace netloc cmp_in_0_2 1 0 4 -20J 20 NJ 20 NJ 20 1810J
+preplace netloc axi_lite_ctrl_0_a_over_na_mul_a_minus_b 1 1 3 450 70 1080 110 1600
+preplace netloc daq_axi_lite_0_intr 1 4 1 2280
+preplace netloc dmca_0_peak_value_ok 1 2 3 1040 1830 1720J 1190 2170
 preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 400
-preplace netloc dmca_1_peak_value 1 2 1 1080
-preplace netloc axi_lite_ctrl_0_wave_en 1 3 2 1670 1160 2150
-preplace netloc adc_sample_0_adc_clk 1 4 3 2170J 1110 NJ 1110 2830J
-preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 990
-preplace netloc axi_lite_ctrl_0_peak_threshold 1 2 1 1100
-preplace netloc dmca_1_peak_value_ok 1 2 1 1090
-preplace netloc triangle_data 1 2 3 920J 1870 1650J 1180 2060
-preplace netloc dmca_0_peak_value 1 2 3 1060 1850 1660J 1200 2080
-preplace netloc mux_controller_0_mux_sel_en 1 3 4 1700 320 2060 270 2630 180 2830J
-preplace netloc rst_ps7_0_66M_peripheral_aresetn 1 1 3 450 500 950 1860 1680
-preplace netloc wave_bram_ctrl_0_BRAM_PORTA 1 4 1 2190
-preplace netloc mux_controller_1_mux_sel_en 1 4 3 2170 220 2620 150 NJ
-preplace netloc xlconcat_0_dout 1 0 6 -10 30 NJ 30 NJ 30 NJ 30 NJ 30 2570
-preplace netloc processing_system7_0_FIXED_IO 1 1 6 NJ 120 NJ 120 NJ 120 NJ 120 NJ 120 N
-preplace netloc axi_lite_ctrl_0_peakext_delay_time 1 2 1 1000
-preplace netloc axi_lite_ctrl_0_b 1 2 1 1020
-preplace netloc axi_lite_ctrl_0_inv_na_mul_a_minus_b 1 2 1 1040
-preplace netloc mux_match_0_mux_sel_ch1_out 1 2 4 1120 80 NJ 80 NJ 80 2610
-preplace netloc daq_axi_lite_0_intr_clr_ack 1 2 3 1130 1820 1550 1120 2100
-preplace netloc adc_sample_0_adc_fifo_data 1 1 4 470 1900 NJ 1900 1690 1540 2060
-preplace netloc rst_ps7_0_250M_peripheral_aresetn 1 2 3 N 640 1560 130 2150
-preplace netloc trapezd_data 1 2 3 940J 1890 1640J 1170 2070
-preplace netloc mux_controller_0_mux_sel 1 4 3 2100 260 2650 190 NJ
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 0 40 420 1520 1030 1840 1570 1110 2160
-preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 1010
-preplace netloc axi_lite_ctrl_0_daq_intr_clr 1 2 3 1120 1810 1580 1150 2120
-preplace netloc adc_data_0_1 1 0 4 NJ 1580 NJ 1580 930J 1780 1600J
-preplace netloc adc_sample_1_adc_fifo_data 1 1 4 440 90 NJ 90 NJ 90 2050
-preplace netloc adc_data_0_2 1 0 4 NJ 1560 NJ 1560 960J 1790 1590J
-levelinfo -pg 1 -30 200 690 1350 1880 2380 2740 2850 -top -20 -bot 1910
+preplace netloc dmca_1_peak_value 1 2 1 1070
+preplace netloc axi_lite_ctrl_0_wave_en 1 3 2 1780 1160 2230
+preplace netloc adc_sample_0_adc_clk 1 4 3 2250J 1110 NJ 1110 2900J
+preplace netloc ps7_0_axi_periph_M01_AXI 1 2 1 1060
+preplace netloc axi_lite_ctrl_0_peak_threshold 1 1 3 520 130 1020 140 1560
+preplace netloc dmca_1_peak_value_ok 1 2 1 1080
+preplace netloc triangle_data 1 2 3 970J 1870 1760J 1180 2140
+preplace netloc dmca_0_peak_value 1 2 3 1010 1850 1770J 1200 2160
+preplace netloc mux_controller_0_mux_sel_en 1 3 4 1810 320 2140 270 2700 180 2910J
+preplace netloc rst_ps7_0_66M_peripheral_aresetn 1 1 3 480 1520 1020 1860 1790
+preplace netloc wave_bram_ctrl_0_BRAM_PORTA 1 4 1 2270
+preplace netloc mux_controller_1_mux_sel_en 1 4 3 2250 220 2690 150 NJ
+preplace netloc xlconcat_0_dout 1 0 6 -10 10 NJ 10 NJ 10 NJ 10 NJ 10 2640
+preplace netloc processing_system7_0_FIXED_IO 1 1 6 430J 100 NJ 100 NJ 100 NJ 100 NJ 100 2900
+preplace netloc axi_lite_ctrl_0_peakext_delay_time 1 1 3 470 140 1010 150 1590
+preplace netloc axi_lite_ctrl_0_b 1 1 3 440 60 N 60 1620
+preplace netloc axi_lite_ctrl_0_inv_na_mul_a_minus_b 1 1 3 460 80 N 80 1610
+preplace netloc mux_match_0_mux_sel_ch1_out 1 2 4 1110 70 NJ 70 NJ 70 2680
+preplace netloc daq_axi_lite_0_intr_clr_ack 1 2 3 1140 1820 1640 1120 2180
+preplace netloc adc_sample_0_adc_fifo_data 1 1 4 540 1900 NJ 1900 1800 1540 2140
+preplace netloc rst_ps7_0_250M_peripheral_aresetn 1 2 3 1010 480 1650 130 2230
+preplace netloc trapezd_data 1 2 3 980J 1890 1750J 1170 2150
+preplace netloc mux_controller_0_mux_sel 1 4 3 2180 260 2720 190 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 0 40 420 1530 1090 1840 1680 1110 2240
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 1050
+preplace netloc axi_lite_ctrl_0_daq_intr_clr 1 2 3 1130 1810 1690 1150 2200
+preplace netloc adc_data_0_1 1 0 4 NJ 1580 NJ 1580 990J 1780 1710J
+preplace netloc adc_sample_1_adc_fifo_data 1 1 4 510 110 1070J 120 1630J 110 2130
+preplace netloc adc_data_0_2 1 0 4 NJ 1560 NJ 1560 1000J 1790 1700J
+levelinfo -pg 1 -50 200 760 1360 1970 2460 2810 2930 -top -20 -bot 1910
 "
 }
 {
